@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+   <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=GjxyoBxVxv0XEQxC1gFvBXd6"></script>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+</head>
+<body>
+   <div class="mbody">
+    <div class="top">
+       <div class="a">
+        <div class="top-left TPublic"></div>
+        <div class="top-left-diqu TPublic">南京
+        <span class="diqu01 SJT">&#xe689;</span>
+       
+        </div>
+        
+        <div class="top-middle TPublic">
+           <ul>
+            <li>首页</li>
+            <li>爱租找房</li>
+            <li>地图找房</li>
+            <li>爱房金融</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li><a>用户登录</a></li>
+            <li>|</li>
+            <li><a>公寓登录</a></li>
+             <li>|</li>
+            <li><span>&#xe601;</span><a>手机爱租</a>&nbsp;</li>
+            </ul>
+        </div>
+        </div>
+         <div class="xiala">无锡&nbsp;苏州&nbsp;常州</div>
+    </div>
+    <div class="bread">
+        您的当前位置：爱租哪 > 个人中心 > 发布房源
+    </div>
+    <div class="con">
+        <div class="con-left congg">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>账户管理</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>个人资料</td></tr>
+                        <tr><td>修改密码</td></tr>
+                        <tr><td>手机修改</td></tr>                    </tbody>
+                         <thead>
+                        <tr>
+                            <td>我的收藏</td>
+                        </tr>
+                    </thead>
+                     <tbody>
+                        <tr><td>收藏房源</td></tr>
+                        <tr><td>找房条件</td></tr>
+                       </tbody>
+                        <thead>
+                        <tr>
+                            <td>我的发布</td>
+                        </tr>
+                    </thead>
+                      <tbody>
+                        <tr><td>发布房源</td></tr>
+                        <tr><td>已发布房源</td></tr>
+                       </tbody>
+                </table>
+        </div>
+        <div class="con-right congg">
+            <div class="con-right-top"></div>
+            
+            <div class="con-right-text">
+            <div class="con-right-name xinxiPub">
+            <span class="mi">*</span>
+            <span class="font">小区名称：</span>
+            <input type="text" placeholder="请输入小区名称" class="txt txtgg">
+              <span class="gou01 gouPub">√</span>
+               <span class="cuowu cw01">×</span>
+               </div>
+                <span class="mi">*</span><span class="spanMap">地图找房</span>
+                <div class="ditu">
+                 <div id="allmap"></div>
+                </div>
+               
+             <div class="con-right-name xinxiPub">
+            <span class="mi">*</span>
+            <span class="font">区属板块：</span>
+             <select name="" class="qushu slt">
+                 <option value="0">区属一</option>
+                 <option value="1">区属二</option>
+                 <option value="2">区属三</option>
+             </select>
+             <select name="" class="bankuai slt">
+                 <option value="0">板块一</option>
+                 <option value="1">板块二</option>
+                 <option value="2">板块三</option>
+             </select>
+            <span class="gou02 gouPub">√</span>
+            <span class="cuowu cw02">×</span>
+            </div>
+               <div class="con-right-name xinxiPub">
+            <span class="mi">*</span>
+            <span class="font">户型选择：</span>
+            <input type="text" class="Smallbox01 Smallbox txtgg"><span>室</span>
+             <input type="text" class="Smallbox02 Smallbox sb txtgg"><span>厅</span>
+              <input type="text" class="Smallbox03 Smallbox sb txtgg"><span>卫</span>
+               <input type="text" class="Smallbox04 Smallbox sb txtgg"><span>阳台</span>
+               <span class="gou03 gouPub">√</span>
+               <span class="cuowu cw03">×</span>
+             </div>
+              <div class="con-right-name xinxiPub">
+            <span class="mi">*</span>
+            <span class="font">出租形式：</span>
+            <input type="radio" name="radio" checked="checked">整租&nbsp;
+            <input type="radio" name="radio">合租
+            <select name="" class="bedroom01 bedPub">
+                <option value="0">选择卧室内容</option>
+                <option value="1">卧室1</option>
+                <option value="2">卧室2</option>
+            </select>
+            <select name="" class="bedroom02 bedPub">
+                <option value="0">选择限制条件</option>
+                <option value="1">限制条件1</option>
+                <option value="2">限制条件2</option>
+            </select>
+            <span class="gou04 gouPub">√</span>
+            <span class="cuowu cw04">×</span>
+           </div>
+            <div class="con-right-name xinxiPub">
+            <span class="mi">*</span>
+            <span class="font">面积选择：</span>
+                <input type="text" placeholder="请输入面积" class="pfm pfmpub01">&nbsp;平方米
+                <span class="gou05 gouPub">√</span>
+                <span class="cuowu cw05">×</span>
+                </div>
+                
+                 <div class="con-right-name xinxiPub">
+            <span class="mi">*</span>
+            <span class="font">租金选择：</span>
+                <input type="text" placeholder="请输入租金" class="pfm pfmpub02">&nbsp;元/月
+                <span class="gou06 gouPub">√</span>
+                <span class="cuowu cw06">×</span></div>
+                <div class="con-right-name xinxiPub">
+            <span class="mi">*</span>
+            <span class="font">付款方式：</span>
+            <input type="checkbox" name="checkbox" value="checkbox" checked="checked">月付
+             <input type="checkbox" name="checkbox" value="checkbox">季付
+              <input type="checkbox" name="checkbox" value="checkbox">半年付
+               <input type="checkbox" name="checkbox" value="checkbox">年付
+                <input type="checkbox" name="checkbox" value="checkbox">都可以
+                <span class="gou07 gouPub">√</span>
+                <span class="cuowu cw07">×</span>
+            </div>
+            <div class="file">
+                
+                <span class="filesc"><span class="mi">*</span>上传图片：</span>
+                <div class="jiahao">+
+                <input type="file" class="fileyc">
+                   </div>
+                   <img src="" alt="没有上传图片" class="img"></img>
+                     </div>
+                     <div class="con-right-name xinxiPub">
+            <span class="mi">*</span>
+            <span class="font">手机验证：</span>
+            <input type="text" placeholder="请输入手机号码" class="shouji txtgg">
+            <span class="gou08 gouPub">√</span>
+            <span class="cuowu cw08">×</span></div>
+            <textarea name="" id="tarea" cols="60" rows="10" ></textarea>
+            <input type="button" value="提交" class="btn">
+            </div>
+           
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+    $(function(){
+       
+       $(".SJT").click(function(){
+           $(".xiala").show();
+       })
+       $(".xiala").mouseleave(function(){
+           $(".xiala").hide();
+       })
+   })//地区选择
+    $(function(){
+        var zze=/^1[34578]\d{9}$/;
+            var nums=null;
+        $(".btn").on("click",function(){
+            nums=$(".shouji").val();
+            if(!zze.test(nums)){
+                 $(".cw08").show();
+            }else{
+                $(".cw08").hide();
+                $(".gou08").show();
+            }
+           
+        })
+    })//手机验证
+    $(function(){
+        $(".jiahao").mousemove(function(){
+            var file=$(".fileyc").val();
+            
+            $(".img").attr("src",file);
+            console.log(file);
+        })
+    })//上传图片 
+    $(function(){
+        $(".txtgg").on(".txtgg change",function(){
+            var val=$(this).val();
+            $("#tarea").html(val);
+        })
+    })//显示text里面的内容
+    $(function(){
+     $(".spanMap").click(function(){
+		 if($(this).html() == '地图找房'){
+			 $(this).text("收起地图找房");
+			 $(".ditu").css({"height": 300}).slideDown(1000);
+             
+          var map = new BMap.Map("allmap");
+	      var point = new BMap.Point(118.786471,32.029215);
+	      map.centerAndZoom(point, 15);
+	      var marker = new BMap.Marker(point);  // 创建标注
+          map.addOverlay(marker);               // 将标注添加到地图中
+          var label = new BMap.Label("欣才IT学院",{offset:new BMap.Size(-24,-40)});
+	      marker.setLabel(label);
+	      marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+		 } else {
+			 $(this).text("地图找房");
+			 $(".ditu").slideUp(1000);	 
+		 }
+
+	 })
+})//地图
+    $(function(){
+       var zz1 = /^[0-9]*[1-9][0-9]*$/; 
+       var nums=null;
+       var numtwo=null;
+        $(".btn").on("click",function(){
+            nums=$(".pfmpub01").val();
+            if(!zz1.test(nums)){
+                $(".cw05").show();
+                 $(".gou05").hide();
+            }else{
+                $(".gou05").show();
+                 $(".cw05").hide();
+            }
+            numtwo=$(".pfmpub02").val();
+            if(!zz1.test(numtwo)){
+                $(".cw06").show();
+                 $(".gou06").hide();
+            }else{
+                $(".gou06").show();
+                 $(".cw06").hide();
+            }
+   })
+       })//验证几室几厅
+    $(function(){
+        var zz3 = /^[0-9]*[1-9][0-9]*$/; //不为0的正数
+        var zz4= /^\+?(0|[1-9][0-9]*)$/;//能为0的正数
+        var numss=null;
+        var numser=null;
+        $(".btn").on("click",function(){
+            numss=$(".Smallbox01").val();
+            numser=$(".sb").val();
+            var kong=$(".Smallbox").val();
+            if(!zz3.test(numss) && !zz4.test(numser) && kong !== ''){
+                $(".cw03").show();
+            }else{
+                $(".gou03").show();
+            }
+        })
+    })
+</script>
+

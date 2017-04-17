@@ -1,0 +1,250 @@
+*{
+    padding:0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+}
+.mbody{
+    width: 100%;
+    height: 100%;
+}
+ul,li{
+    list-style: none;
+}
+@mixin Tfont{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+@mixin text{
+    width: 423px;
+    height: 33px;
+}
+.top{
+    height: 68px;
+    width: 100%;
+    background: #f6f6f6;
+    box-shadow: 0 5px 5px #ccc;
+    
+}
+
+.a{
+    width: 1200px;
+    overflow: hidden;
+}
+.top-left{
+    width: 113px;
+    background: url(../images/logo.png)no-repeat;
+    margin-left: 240px;
+}
+.top-middle{
+    width: 680px;
+}
+.TPublic{
+    height: 68px;
+    float: left;
+}
+.top-left-diqu{
+    width: 80px;
+    line-height: 68px;
+    text-align: center;
+}
+.SJT{
+    font-family: 'iconfont';
+    font-size: 20px;
+    color: red;
+}
+.xiala{
+    width: 150px;
+    height: 50px;
+    border: 1px solid #ccc;
+    margin-left: 340px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    display: none;
+    background: #ccc;
+    position: absolute;
+    z-index: 1;
+}
+.shouji{
+    @tetend .txt;
+    width: 250px;
+}
+.top-middle li{
+    @include Tfont;
+    float: left;
+    line-height: 68px;
+    margin-left: 17px;
+}
+.top-middle li a{
+    font-size: 14px;
+    
+}
+.top-middle ul li span{
+    font-family: 'iconfont';
+    color: red;
+}
+.bread{
+    width: 300px;
+    height: 56px;
+    border: 1px solid #ccc;
+    margin-left: 240px;
+    line-height: 56px;
+    color: #666666;
+    font-size: 14px;
+    text-align: center;
+}
+.con{
+    width: 808px;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-left: 240px;
+}
+.congg{
+    float: left;
+    height: 637px;
+}
+.con-left{
+    width: 224px;
+}
+.con-right{
+    width: 562px;
+    margin-left: 22px;
+}
+table{
+    width: 224px;
+    height: 384px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+table tr{
+    height: 40px;
+}
+table thead tr td{
+    height: 36px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 36px;
+    background: #f7f7f7;
+}
+table tbody tr td{
+    text-align: center;
+}
+.con-right-top{
+    height: 36px;
+    width: 562px;
+    background: #ccc;
+}
+.xinxiPub{
+    margin-top: 10px;
+    width: 482px;
+    height: 33px;
+    border: 1px solid #ccc;
+}
+.gouPub{
+    color: aqua;
+    display: none;
+}
+.cuowu{
+    display: none;
+    color: red;
+}
+.cw{
+    color: red;
+    display: none;
+}
+.spanMap{
+    cursor: pointer;
+}
+.ditu{
+    width: 460px;
+    border: 1px dashed #ccc;
+    display: none;
+}
+
+ #allmap {
+            width: 464px;
+            height: 300px;         
+            font-family:'Microsoft Accor black';        
+       }
+.txt{
+    
+    width: 350px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.txtgg{
+    height: 30px;
+}
+.con-right-text{
+    width: 482px;
+    height: auto;
+    border:1px solid #ccc;
+    margin-left: 50px;
+}
+.mi{
+    font-family: 'iconfont';
+    color: red;
+    font-size:20px;
+}
+.slt{
+    width: 172px;
+    height: 33px;
+}
+.Smallbox{
+    width: 59px;
+}
+.bedPub{
+    width: 120px;
+    height: 33px;
+}
+.pfm{
+    height: 30px;
+    width: 250px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.file{
+    width: 472px;
+    height: 130px;
+    
+    position: relative;
+}
+.jiahao{
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    border: 1px dotted #f2f2f2;
+    float: right;
+    margin-right: 300px;
+    border-radius: 4px;
+   
+}
+.fileyc{
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+    width: 80px;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+}
+#tarea{
+    margin-top: 10px;
+}
+.btn{
+    width: 143px;
+    height: 43px;
+    border-right: 10px;
+    border: 0;
+    background: #ec6c00;
+    margin-top: 20px;
+}
