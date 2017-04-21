@@ -32,6 +32,10 @@ tbody tr.bg{
     background: #000;
     color: #fff;
 }
+.btnn{
+    background: red;
+    border: 0;
+}
 .txt{
     width: 100px;
     height: 20px;
@@ -57,7 +61,8 @@ th{
     height: 0px;
     cursor: pointer;
     margin: 0 auto;
-    border-top:10px solid #ccc;
+   
+    border-top:10px solid red;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
 }

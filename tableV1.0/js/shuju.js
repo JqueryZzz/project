@@ -3,10 +3,10 @@ $(function(){
     $(".sanjiao").on("click",function(){
       if(sta == 0){
           sta=1;
-          $(".sanjiao").css({"border-bottom":"10px solid #ccc","border-top":"none"});
+          $(".sanjiao").css({"border-bottom":"10px solid red","border-top":"none"});
       }else{
           sta=0;
-           $(".sanjiao").css({"border-top":"10px solid #ccc","border-bottom":"none"});
+           $(".sanjiao").css({"border-top":"10px solid red","border-bottom":"none"});
       }
     })
 })//排序
@@ -19,6 +19,7 @@ $(function(){
             }
     })
 })
+
 $(function(){
     $(".btns").click(function(){  
         $("input[name='chbox']:checked").each(function(){//遍历选中的checkbox
@@ -39,7 +40,7 @@ $(function(){
                         '<td><input class="test" type="text" value="' + json.cjtime + '" disabled></td>' +
                         '<td><input class="test" type="text" value="' + json.cjer + '" disabled></td>' +
                         '<td><input class="test" type="text" value="' + json.diqu + '" disabled></td>' +
-                        '<td> <input type="button" value="删除该行数据" title="'+ json.id +'" class="btnn"> <td>' +
+                        '<td> <input type="button" value="删除该行" title="'+ json.id +'" class="btnn"> <td>' +
                     '</tr>';
         return html_;
     }
@@ -157,7 +158,18 @@ $(function(){
              $("tbody tr").eq(index).remove("tbody tr");
 //                delFun(id)
                 break;
-                  }
+            case 13:
+               index = $("tr.bg").index()+1;
+                if($("input[name=chbox]").eq(index).is(':checked')){
+                    
+                     $("input[name=chbox]").eq(index).prop("checked",false); 
+                }else{
+                  
+                    $("input[name=chbox]").eq(index).prop("checked",true); 
+                  
+                }
+                     
+               }
     })
     $("body").on("click", "td", function(){
 		$(this).children("input").removeAttr("disabled");
